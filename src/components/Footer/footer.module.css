@@ -1,0 +1,9 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    /*box-shadow: rgba(0, 0, 0, 0.1);*/
+    color: #fff;
+    /*row-span: 3;*/
+}

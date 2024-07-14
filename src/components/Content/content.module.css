@@ -1,0 +1,135 @@
+:root{
+    --text-color: #000000;
+    --border-radius: 5px;
+}
+.content{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 1rem;
+}
+
+.content_section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    gap: 1rem;
+}
+
+.search_wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: #fff;
+    border-radius: var(--border-radius);
+}
+
+.search_input {
+    color: var(--text-color);
+    padding: 0.5rem;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    background: none;
+    outline: none;
+}
+
+
+.sort_area {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    color: var(--text-color);
+    align-content: center;
+
+}
+
+.sort_area label {
+   align-self: center;
+}
+.sort_buttons_wrapper{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+}
+
+.sidebar {
+  display: none;
+}
+
+.module_list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 15rem;
+    background: #fff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+    border-radius: var(--border-radius);
+}
+.module_list_item{
+    display: grid;
+    color: var(--text-color);;
+    padding: 0.4rem 1rem;
+    grid-template-columns: 3fr 1fr 1fr;
+}
+
+.module_list_item:nth-child(1){
+    background: #f5f5f5;
+    font-weight: bold;
+}
+
+.pagination {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem 0;
+}
+
+.page_count {
+    margin: 0;
+    color: var(--text-color);
+    text-align: center;
+    grid-column: 2/span 1;
+}
+
+.button {
+    width: auto;
+    color: var(--text-color);
+    padding: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    background: none;
+    border: none;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.button:focus{
+    outline: none;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    min-height: 15rem;
+    background: #fff;
+}
+@media only screen and (min-width: 80rem) {
+    .content {
+        grid-template-columns: 1fr 6fr;
+        gap: 1rem;
+    }
+    .sidebar {
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+        background: #ffffff;
+        border-radius: var(--border-radius);
+
+    }
+}
